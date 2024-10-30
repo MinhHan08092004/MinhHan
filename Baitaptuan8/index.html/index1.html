@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+         [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        li{
+            width: 150px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        #form1{
+            height: auto;
+        }
+        #checkbox{
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+    <script>
+      
+        $(document).ready(function() {
+            var i=2;
+            $("#btnDK").click(function(){
+                $("#myModal").modal();
+            })
+        });
+    </script>
+    </style>
+</head>
+
+<body>
+    <div class="container border"> 
+        <div class="row">
+            <div class="col-12">
+
+                <img src="../header.png" alt="" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar">
+                <ul class="nav-navbar nav-expand">
+                    <li class="nav-item"> <a href="#" class="nav-link">Trang chu</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link" id="btnDK">Dang ky</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link">Tro giup</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table-bordered table hover table " id="tbDanhSach">
+                <tr>
+                    <th>STT</th>
+                    <th>Ma hoc vien</th>
+                    <th>Ho ten</th>
+                    <th>Email</th>
+                    <th>Tien dich vu</th>
+                    <th>Tien do dung</th>
+                    <th>Tong tien</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>123456789</td>
+                    <td>Tran Anh</td>
+                    <td>hongquang@iuh.edu.vn</td>
+                    <td>30000</td>
+                    <td>10000</td>
+                    <td>40000</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="modal fade" id="myModal">
+                <div class="Modal-dialog">
+                <div class="modal content">
+                    <div class="modal header">
+                        <h5>THONG TIN THANH TOAN</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-control" id="form1">
+                            <div class="row form-group p-1">
+                                <div class="col-3 col-sm-3">
+                                    <label for="">Ma hoc vien:</label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+            
+</body>
+</html>
